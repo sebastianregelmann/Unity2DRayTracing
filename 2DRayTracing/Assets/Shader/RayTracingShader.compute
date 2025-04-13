@@ -1,0 +1,117 @@
+#pragma kernel CSMain
+#include "StructDefinition.hlsl"
+#include "RayTracingHelper.hlsl"
+
+RWTexture2D<float4> Result; // Output texture
+
+float2 resolution; // Screen resolution (width, height)
+float2 cameraPosition; // Camera world position
+float cameraOrthographicSize; // Orthographic size of the camera
+float cameraAspect; // Aspect ratio (width / height)
+
+StructuredBuffer<GeometryData> _GeometryDatas;
+StructuredBuffer<ColliderEdge> _ColliderEdges;
+int numberOfObjects;
+//Settings variables
+int numberOfRays;
+
+
+//Struct Definitions
+float3 getPixelColor(float2 pixelPosition);
+float3 getEdgeColor(float2 pixelPosition);
+int getCosestEdgeIndex(Ray ray, out float minDistance);
+
+[numthreads(8,8,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    if (id.x >= resolution.x || id.y >= resolution.y) return;
+
+    // Normalize pixel coords to [0,1]
+    float2 uv = id.xy / resolution;
+
+    // Convert to world space
+    float worldHeight = cameraOrthographicSize * 2.0;
+    float worldWidth = worldHeight * cameraAspect;
+
+    float2 bottomLeft = cameraPosition - float2(worldWidth, worldHeight) * 0.5;
+
+    float2 worldPos = bottomLeft + uv * float2(worldWidth, worldHeight);
+
+    float4 color = 0;
+    //loop over each hitbox and check if the pixel is inside
+    color = float4(getPixelColor(worldPos).rgb, 1);
+
+    // Encode world position as color for visualization
+    Result[id.xy] = color;
+}
+
+
+
+
+float3 getPixelColor(float2 pixelPosition)
+{
+    //Check if pixel hits a hitbox
+    for(int i = 0; i < numberOfObjects; i ++)
+    {
+        GeometryData geometryData = _GeometryDatas[i];
+        if(inHitBox(pixelPosition, geometryData.hitBox))
+        {
+            return geometryData.material.color;
+        }
+    }
+
+    return getEdgeColor(pixelPosition);
+}
+
+
+float3 getEdgeColor(float2 pixelPosition)
+{
+    float3 color = 0;
+
+    for(int ri = 0; ri < numberOfRays; ri ++)
+    {
+        Ray ray = generateStartRay(ri, pixelPosition, numberOfRays);
+        float minDistance;
+        int closestObjectIndex = getCosestEdgeIndex(ray, minDistance);
+
+        if(closestObjectIndex >= 0)
+        {
+            float screenDiagonal = sqrt(resolution.x * resolution.x + resolution.y * resolution.y);
+            float factor = 1 - (minDistance / screenDiagonal);
+            color = color + _GeometryDatas[closestObjectIndex].material.color * factor * _GeometryDatas[closestObjectIndex].material.emission;
+        }
+    }
+
+    return color / float(numberOfRays);
+}
+
+
+int getCosestEdgeIndex(Ray ray, out float minDistance)
+{
+    int index = - 1;
+    float closestDistance = 1000000;
+
+    //Loop over each object
+    for(int i = 0; i < numberOfObjects; i ++)
+    {
+        int startIndex = _GeometryDatas[i].edgeStartIndex;
+        int edgeCount = _GeometryDatas[i].edgeCount;
+
+        for(int j = startIndex; j < startIndex + edgeCount; j ++)
+        {
+            float2 hitPoint;
+            if(rayEdgeIntersection(_ColliderEdges[startIndex], ray, hitPoint))
+            {
+                float dist = distance(ray.origin, hitPoint);
+                if(dist < closestDistance)
+                {
+                    index = i;
+                    closestDistance = dist;
+                }
+            }
+        }
+    }
+
+    minDistance = closestDistance;
+    return index;
+}

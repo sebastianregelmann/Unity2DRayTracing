@@ -1,0 +1,319 @@
+Base path: 'C:/Apps/Unity/Editor/2022.3.58f1/Editor/Data', plugins path 'C:/Apps/Unity/Editor/2022.3.58f1/Editor/Data/PlaybackEngines'
+Cmd: initializeCompiler
+
+Cmd: compileSnippet
+  insize=899 file=Assets/DefaultResourcesExtra/Sprites-Default.shader name=Sprites/Default pass=<Unnamed Pass 0> ppOnly=0 stripLineD=0 buildPlatform=19 rsLen=0 pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW= dKW=ETC1_EXTERNAL_ALPHA INSTANCING_ON PIXELSNAP_ON UNITY_NO_DXT5nm UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_NO_FULL_STANDARD_SHADER UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_COLORSPACE_GAMMA UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_VIRTUAL_TEXTURING UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_ASTC_NORMALMAP_ENCODING SHADER_API_GLES30 UNITY_UNIFIED_SHADER_PRECISION_MODEL flags=0 lang=0 type=Vertex platform=d3d11 reqs=1 mask=6 start=32 ok=1 outsize=890
+
+Cmd: compileComputeKernel
+  insize=404 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0 ok=1 outsize=481
+
+Cmd: compileComputeKernel
+  insize=912 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(13): signed/unsigned mismatch, unsigned assumed
+  error: 2 plat 4 at RayTracingShader.compute(19): undeclared identifier 'camOrthographicSize'
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=921 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(13): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=923
+
+Cmd: compileComputeKernel
+  insize=993 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 2 plat 4 at RayTracingShader.compute(30): undeclared identifier 'color'
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=1006 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0 ok=1 outsize=329
+
+
+Cmd: compileComputeKernel
+  insize=1085 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(19): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=923
+
+Cmd: compileComputeKernel
+  insize=1083 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 2 plat 26 at RayTracingShader.compute(1): Couldn't open include file 'RayTracingHelper.hlsl'.
+ ok=0 outsize=0
+
+
+Cmd: compileComputeKernel
+  insize=1083 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(19): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=923
+
+
+Cmd: compileComputeKernel
+  insize=1083 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 2 plat 4 at Assets/Shader/RayTracingHelper.hlsl(8): syntax error: unexpected token 'point'
+ ok=0 outsize=0
+
+
+Cmd: compileComputeKernel
+  insize=1083 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 2 plat 4 at RayTracingShader.compute(5): syntax error: unexpected token 'RWTexture2D'
+ ok=0 outsize=0
+
+
+Cmd: compileComputeKernel
+  insize=1083 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(19): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=923
+
+
+Cmd: compileComputeKernel
+  insize=1083 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(19): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=923
+
+
+
+Cmd: compileComputeKernel
+  insize=1083 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(19): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=923
+
+Cmd: compileComputeKernel
+  insize=1466 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(19): signed/unsigned mismatch, unsigned assumed
+  error: 2 plat 4 at RayTracingShader.compute(34): 'GetDimensions': no matching 1 parameter intrinsic method; Possible intrinsic methods are: StructuredBuffer<struct GeometryData>.GetDimensions(out uint count, out uint stride)
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=1503 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(19): signed/unsigned mismatch, unsigned assumed
+  error: 2 plat 4 at RayTracingShader.compute(34): 'GetDimensions': no matching 0 parameter intrinsic method; Possible intrinsic methods are: StructuredBuffer<struct GeometryData>.GetDimensions(out uint count, out uint stride)
+  error: 2 plat 4 at RayTracingShader.compute(34): syntax error: unexpected token 'sizeof'
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=1387 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(20): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=1372
+
+Cmd: compileComputeKernel
+  insize=1387 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(20): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=1372
+
+Cmd: compileComputeKernel
+  insize=1406 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(20): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=1408
+
+
+
+Cmd: compileComputeKernel
+  insize=1406 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(20): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=1408
+
+Cmd: compileComputeKernel
+  insize=1429 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(20): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=1432
+
+
+Cmd: compileComputeKernel
+  insize=1429 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 2 plat 4 at Assets/Shader/RayTracingHelper.hlsl(28): constructors only defined for numeric base types
+ ok=0 outsize=0
+
+
+Cmd: compileComputeKernel
+  insize=1429 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 2 plat 4 at Assets/Shader/RayTracingHelper.hlsl(28): syntax error: unexpected token 'new'
+  error: 1 plat 4 at RayTracingShader.compute(20): signed/unsigned mismatch, unsigned assumed
+ ok=0 outsize=0
+
+
+Cmd: compileComputeKernel
+  insize=1429 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 2 plat 4 at Assets/Shader/RayTracingHelper.hlsl(28): syntax error: unexpected token '{'
+  error: 1 plat 4 at RayTracingShader.compute(20): signed/unsigned mismatch, unsigned assumed
+ ok=0 outsize=0
+
+
+Cmd: compileComputeKernel
+  insize=1429 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(20): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=1432
+
+
+Cmd: compileComputeKernel
+  insize=1429 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(20): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=1432
+
+Cmd: compileComputeKernel
+  insize=1468 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(22): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=1432
+
+
+Cmd: compileComputeKernel
+  insize=1468 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 2 plat 4 at Assets/Shader/RayTracingHelper.hlsl(31): syntax error: unexpected token 'e'
+  error: 2 plat 4 at Assets/Shader/RayTracingHelper.hlsl(37): undeclared identifier 'v'
+ ok=0 outsize=0
+
+
+Cmd: compileComputeKernel
+  insize=1468 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(22): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=1432
+
+
+Cmd: compileComputeKernel
+  insize=2893 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 2 plat 4 at RayTracingShader.compute(21): unrecognized identifier 'objectIndex'
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=2897 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+  error: 2 plat 4 at RayTracingShader.compute(66): undeclared identifier 'worldPos'
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=3150 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+  error: 2 plat 4 at RayTracingShader.compute(66): undeclared identifier 'worldPos'
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=3155 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+  error: 2 plat 4 at RayTracingShader.compute(68): 'getPixelColor': function must return a value
+  error: 2 plat 4 at RayTracingShader.compute(68): invalid subscript 'color'
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=3159 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+  error: 2 plat 4 at RayTracingShader.compute(68): invalid subscript 'color'
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=3155 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+  error: 2 plat 4 at RayTracingShader.compute(68): 'getPixelColor': function must return a value
+  error: 2 plat 4 at RayTracingShader.compute(68): invalid subscript 'color'
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=3164 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+  error: 2 plat 4 at RayTracingShader.compute(87): unrecognized identifier 'objectIndex'
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=3168 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+  error: 2 plat 4 at RayTracingShader.compute(90): undeclared identifier 'ri'
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=3172 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+  error: 2 plat 4 at RayTracingShader.compute(99): undeclared identifier 'j'
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=3176 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+  error: 2 plat 4 at RayTracingShader.compute(106): unrecognized identifier 'i'
+  error: 2 plat 4 at RayTracingShader.compute(106): unrecognized identifier 'objectIndex'
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=3179 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=1432
+
+Cmd: compileComputeKernel
+  insize=2955 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+  error: 2 plat 4 at RayTracingShader.compute(42): 'getPixelColor': no matching 0 parameter function
+  error: 2 plat 4 at RayTracingShader.compute(42): syntax error: unexpected token 'pixelPosition'
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=2943 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=3266
+
+Cmd: compileComputeKernel
+  insize=3076 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+  error: 2 plat 4 at RayTracingShader.compute(66): 'findClosestEdgeIndex': no matching 2 parameter function
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=3086 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+  error: 2 plat 4 at RayTracingShader.compute(74): undeclared identifier 'width'
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=3098 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+  error: 2 plat 4 at RayTracingShader.compute(96): 'distance': identifier represents a variable, not a function
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=3109 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+  error: 2 plat 4 at RayTracingShader.compute(76): undeclared identifier 'distance'
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=3112 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=3378
+
+Cmd: compileComputeKernel
+  insize=3116 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=3410
+
+Cmd: compileComputeKernel
+  insize=3112 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=3382
+
+Cmd: compileComputeKernel
+  insize=3345 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+  error: 2 plat 4 at RayTracingShader.compute(94): unrecognized identifier 'distance'
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=3371 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+  error: 2 plat 4 at RayTracingShader.compute(88): 'getCosestEdgeIndex': no matching 1 parameter function
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=3404 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+  error: 2 plat 4 at RayTracingShader.compute(110): undeclared identifier 'pixelPosition'
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=3401 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+  error: 2 plat 4 at RayTracingShader.compute(110): 'distance': identifier represents a variable, not a function
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=3416 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+  error: 2 plat 4 at RayTracingShader.compute(111): syntax error: unexpected token 'if'
+  error: 2 plat 4 at RayTracingShader.compute(119): unrecognized identifier 'minDistance'
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=3421 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+  error: 2 plat 4 at RayTracingShader.compute(111): syntax error: unexpected token 'if'
+  error: 2 plat 4 at RayTracingShader.compute(120): unrecognized identifier 'minDistance'
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=3418 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+  error: 2 plat 4 at RayTracingShader.compute(66): function 'findClosestEdgeIndex' missing implementation
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=3187 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+  error: 2 plat 4 at RayTracingShader.compute(67): undeclared identifier 'objectIndex'
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=3451 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+  error: 2 plat 4 at RayTracingShader.compute(67): undeclared identifier 'objectIndex'
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=3270 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+  error: 2 plat 4 at RayTracingShader.compute(63): undeclared identifier 'getEdgeColor'
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=3218 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=3346
+
+Cmd: compileComputeKernel
+  insize=3224 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=3374
+
+Cmd: compileComputeKernel
+  insize=3226 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=3374
+
+Cmd: compileComputeKernel
+  insize=3194 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=3274
+
+Cmd: compileComputeKernel
+  insize=3221 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=3370
+
+Cmd: compileComputeKernel
+  insize=3218 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=3346
+
+Cmd: compileComputeKernel
+  insize=3273 file=Assets/Shader/RayTracingShader.compute kernel=CSMain ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202239> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=50241 forceDXC=0 forceFXC=0  error: 1 plat 4 at RayTracingShader.compute(27): signed/unsigned mismatch, unsigned assumed
+ ok=1 outsize=3354
+
