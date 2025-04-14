@@ -14,12 +14,14 @@ StructuredBuffer<ColliderEdge> _ColliderEdges;
 int numberOfObjects;
 //Settings variables
 int numberOfRays;
+int numberOfReflections;
 
+//Prototype Definitions
+float3 getPixelColor(float2 pixelPosition, inout uint rngSeed);
+HitData getClosestHit(Ray ray);
+bool insideEdges(float2 pixelPosition, int edgeStartIndex, int edgeCount);
+float3 sampleSingleRay(float2 pixelPosition, inout uint rngSeed);
 
-//Struct Definitions
-float3 getPixelColor(float2 pixelPosition);
-float3 getEdgeColor(float2 pixelPosition);
-int getCosestEdgeIndex(Ray ray, out float minDistance);
 
 [numthreads(8,8,1)]
 void CSMain (uint3 id : SV_DispatchThreadID)
@@ -36,19 +38,18 @@ void CSMain (uint3 id : SV_DispatchThreadID)
     float2 bottomLeft = cameraPosition - float2(worldWidth, worldHeight) * 0.5;
 
     float2 worldPos = bottomLeft + uv * float2(worldWidth, worldHeight);
-
+    uint rngSeed = id.x * id.y;
     float4 color = 0;
     //loop over each hitbox and check if the pixel is inside
-    color = float4(getPixelColor(worldPos).rgb, 1);
+    color = float4(getPixelColor(worldPos, rngSeed).rgb, 1);
+
 
     // Encode world position as color for visualization
     Result[id.xy] = color;
 }
 
 
-
-
-float3 getPixelColor(float2 pixelPosition)
+float3 getPixelColor(float2 pixelPosition, inout uint rngSeed)
 {
     //Check if pixel hits a hitbox
     for(int i = 0; i < numberOfObjects; i ++)
@@ -56,62 +57,151 @@ float3 getPixelColor(float2 pixelPosition)
         GeometryData geometryData = _GeometryDatas[i];
         if(inHitBox(pixelPosition, geometryData.hitBox))
         {
-            return geometryData.material.color;
+            if(insideEdges(pixelPosition, geometryData.edgeStartIndex, geometryData.edgeCount))
+            {
+                return geometryData.material.color * (1 - geometryData.material.transmission);
+            }
         }
     }
 
-    return getEdgeColor(pixelPosition);
-}
-
-
-float3 getEdgeColor(float2 pixelPosition)
-{
+    //if not inside an object
     float3 color = 0;
-
-    for(int ri = 0; ri < numberOfRays; ri ++)
+    for(int i = 0; i < numberOfRays; i ++)
     {
-        Ray ray = generateStartRay(ri, pixelPosition, numberOfRays);
-        float minDistance;
-        int closestObjectIndex = getCosestEdgeIndex(ray, minDistance);
-
-        if(closestObjectIndex >= 0)
-        {
-            float screenDiagonal = sqrt(resolution.x * resolution.x + resolution.y * resolution.y);
-            float factor = 1 - (minDistance / screenDiagonal);
-            color = color + _GeometryDatas[closestObjectIndex].material.color * factor * _GeometryDatas[closestObjectIndex].material.emission;
-        }
+        color = color + sampleSingleRay(pixelPosition, rngSeed);
     }
 
     return color / float(numberOfRays);
 }
 
-
-int getCosestEdgeIndex(Ray ray, out float minDistance)
+HitData getClosestHit(Ray ray)
 {
-    int index = - 1;
-    float closestDistance = 1000000;
+    //Create a hit data objects
+    HitData hitData;
+    hitData.didHit = false;
+    hitData.distance = 10000000;
+    hitData.hitPoint = 0;
+    hitData.normal = 0;
+    hitData.edgeIndex = - 1;
+    hitData.objectIndex = - 1;
 
-    //Loop over each object
+
     for(int i = 0; i < numberOfObjects; i ++)
     {
-        int startIndex = _GeometryDatas[i].edgeStartIndex;
-        int edgeCount = _GeometryDatas[i].edgeCount;
-
-        for(int j = startIndex; j < startIndex + edgeCount; j ++)
+        GeometryData geometryData = _GeometryDatas[i];
+        //Check the edges
+        for(int j = 0; j < geometryData.edgeCount; j ++)
         {
+            //Check if the ray intersects with an edge
             float2 hitPoint;
-            if(rayEdgeIntersection(_ColliderEdges[startIndex], ray, hitPoint))
+            ColliderEdge edge = _ColliderEdges[geometryData.edgeStartIndex + j];
+            if(rayEdgeIntersection(edge, ray, hitPoint))
             {
+                //Check if distance is smaller than max distance
                 float dist = distance(ray.origin, hitPoint);
-                if(dist < closestDistance)
+                if(dist < hitData.distance)
                 {
-                    index = i;
-                    closestDistance = dist;
+                    //Save the data in the hit data
+                    hitData.didHit = true;
+                    hitData.distance = dist;
+                    hitData.hitPoint = hitPoint;
+                    hitData.normal = getNormal(ray, edge);
+                    hitData.material = geometryData.material;
+                    hitData.edgeIndex = geometryData.edgeStartIndex + j;
+                    hitData.objectIndex = i;
                 }
             }
         }
     }
 
-    minDistance = closestDistance;
-    return index;
+    return hitData;
+}
+
+
+
+float3 sampleSingleRay(float2 pixelPosition, inout uint rngSeed)
+{
+    // Initialize color accumulator
+    float3 rayColor = 1;
+    float3 rayLight = 0;
+
+    //Create start ray
+    Ray ray = generateRandomRay(pixelPosition, rngSeed);
+
+    // Ray tracing loop
+    for(int rayDepth = 0; rayDepth < numberOfReflections; rayDepth ++)
+    {
+        // Get the closest hit (triangle hit)
+        HitData hit = getClosestHit(ray);
+
+        //When object was hit
+        if(hit.didHit)
+        {
+            //Tint ray based on material color
+            rayColor *= hit.material.color;
+            //Calculate emission strength
+            rayLight += hit.material.emission * rayColor;
+
+            //When object is translusent
+            if(hit.material.transmission > 0)
+            {
+                //Code when ray enters trasnlusent object
+                break;
+            }
+            else
+            {
+                // Update ray for the next iteration (reflection trace)
+                ray = getRayReflection(ray, hit, rngSeed);
+                ray.origin = ray.origin + ray.direction * 0.001;
+            }
+        }
+
+        //No hit -> Ray goes to infinity
+        else
+        {
+            break;
+        }
+    }
+
+    return rayLight;
+}
+
+
+
+
+bool insideEdges(float2 pixelPosition, int edgeStartIndex, int edgeCount)
+{
+    int intersections = 0;
+
+    for (int i = 0; i < edgeCount; i ++)
+    {
+        ColliderEdge edge = _ColliderEdges[edgeStartIndex + i];
+
+        float2 a = edge.start;
+        float2 b = edge.end;
+
+        // Make sure a.y <= b.y
+        if (a.y > b.y)
+        {
+            float2 temp = a;
+            a = b;
+            b = temp;
+        }
+
+        // Check if pixelPosition.y is between the y of the edge
+        if (pixelPosition.y > a.y && pixelPosition.y <= b.y)
+        {
+            // Compute the x-coordinate of the intersection of the edge with the horizontal ray
+            float t = (pixelPosition.y - a.y) / (b.y - a.y);
+            float xIntersection = lerp(a.x, b.x, t);
+
+            // If the point is to the left of the intersection, it's a hit
+            if (pixelPosition.x < xIntersection)
+            {
+                intersections ++;
+            }
+        }
+    }
+
+    return (intersections % 2) == 1;
 }

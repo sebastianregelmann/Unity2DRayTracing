@@ -37,4 +37,17 @@ struct GeometryData
     int edgeCount;
 };
 
+
+//Ray Hit data
+struct HitData
+{
+    bool didHit;
+    float distance;
+    float2 hitPoint;
+    float2 normal;
+    RayTracingMaterial material;
+    int edgeIndex;
+    int objectIndex;
+};
+
 #endif

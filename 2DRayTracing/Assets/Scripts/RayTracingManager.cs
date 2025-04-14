@@ -24,6 +24,7 @@ public class RayTracingManager : MonoBehaviour
 
     //Settings variables
     public int numberOfRays = 1;
+    public int numberOfReflections = 1;
 
     //Variables to track if camera data changed
     private int lastScreenHeight = 0;
@@ -33,6 +34,7 @@ public class RayTracingManager : MonoBehaviour
 
     //Variables to track settings variables
     private int lastNumberOfRays;
+    private int lastNumberOfReflections;
 
     // Start is called before the first frame update
     void Start()
@@ -114,7 +116,7 @@ public class RayTracingManager : MonoBehaviour
     /// <returns></returns>
     private bool settingsChanged()
     {
-        return lastNumberOfRays != numberOfRays;
+        return lastNumberOfRays != numberOfRays || lastNumberOfReflections != numberOfReflections;
     }
 
 
@@ -126,6 +128,7 @@ public class RayTracingManager : MonoBehaviour
         if (settingsChanged())
         {
             computeShader.SetInt("numberOfRays", numberOfRays);
+            computeShader.SetInt("numberOfReflections", numberOfReflections);
         }
     }
 
@@ -172,6 +175,7 @@ public class RayTracingManager : MonoBehaviour
 
         //Settings variables
         lastNumberOfRays = numberOfRays;
+        lastNumberOfReflections = numberOfReflections;
 
     }
     /// <summary>

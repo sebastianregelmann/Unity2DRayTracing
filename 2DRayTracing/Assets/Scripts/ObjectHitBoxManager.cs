@@ -122,13 +122,26 @@ public class ObjectHitBoxManager : MonoBehaviour
     {
         List<ColliderEdge> edges = new List<ColliderEdge>();
 
-        Bounds bounds = collider.bounds;
+        // Get local half-size
+        Vector2 size = collider.size;
+        Vector2 offset = collider.offset;
+        Vector2 halfSize = size * 0.5f;
 
-        Vector2 topLeft = new Vector2(bounds.min.x, bounds.max.y);
-        Vector2 topRight = bounds.max;
-        Vector2 bottomRight = new Vector2(bounds.max.x, bounds.min.y);
-        Vector2 bottomLeft = bounds.min;
+        // Local-space corners (relative to the collider's offset)
+        Vector2 topLeft = new Vector2(-halfSize.x, halfSize.y) + offset;
+        Vector2 topRight = new Vector2(halfSize.x, halfSize.y) + offset;
+        Vector2 bottomRight = new Vector2(halfSize.x, -halfSize.y) + offset;
+        Vector2 bottomLeft = new Vector2(-halfSize.x, -halfSize.y) + offset;
 
+        // Transform to world space (including rotation)
+        Transform transform = collider.transform;
+
+        topLeft = transform.TransformPoint(topLeft);
+        topRight = transform.TransformPoint(topRight);
+        bottomRight = transform.TransformPoint(bottomRight);
+        bottomLeft = transform.TransformPoint(bottomLeft);
+
+        // Add edges
         edges.Add(new ColliderEdge { start = topLeft, end = topRight });
         edges.Add(new ColliderEdge { start = topRight, end = bottomRight });
         edges.Add(new ColliderEdge { start = bottomRight, end = bottomLeft });
